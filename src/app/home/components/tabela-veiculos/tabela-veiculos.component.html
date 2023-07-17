@@ -1,0 +1,36 @@
+<div class="table-container">
+    <table>
+        <tr>
+            <th>Marca</th>
+            <th>Placa</th>
+            <th>Ano</th>
+            <th>Tipo</th>
+            <th>Ações</th>
+        </tr>
+        <tbody>
+            <tr *ngFor="let item of veiculoList; let i = index">
+                <td>
+                    {{item.marca}}
+                </td>
+                <td>
+                    {{item.placa}}
+                </td>
+                <td>
+                    {{item.ano}}
+                </td>
+                <td>
+                    {{item.tipo}}
+                </td>
+                <td>
+                    <button class="edita" (click)="editaItem(item)">Editar</button>
+                    <button class="exclui" (click)="deleteItem(i)">
+                    <img
+                        class="icone"
+                        src="../../../../../assets/icons/icons8-excluir.svg"
+                        alt=""
+                    />
+                </button></td>
+            </tr>
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,23 @@
+<div class="form-container">
+    <h2>Preencha os dados para cadastrar um veículo!</h2>
+    <input type="text" [(ngModel)]="veiculo.marca" name="marca" id="marca" placeholder="Marca">
+    <br/>
+    <input type="text" [(ngModel)]="veiculo.placa" name="placa" id="placa" placeholder="Placa">
+    <br/>
+    <input type="number" [(ngModel)]="veiculo.ano" name="ano" id="ano" placeholder="Ano">
+    <br/>
+    <label for="tipo">
+        <input type="radio" nome="tipo" value="Popular" [(ngModel)]="veiculo.tipo">
+        Popular
+    </label>
+    <label for="tipo">
+        <input type="radio" nome="tipo" value="Luxo" [(ngModel)]="veiculo.tipo">
+        Luxo
+    </label>
+    <label for="tipo">
+        <input type="radio" nome="tipo" value="Carga" [(ngModel)]="veiculo.tipo">
+        Carga
+    </label>
+</div>
+<br/>
+<button class="salvar" [disabled]="!veiculo.marca || !veiculo.placa || !veiculo.ano || !veiculo.tipo " (click)="addVeiculo()">Salvar</button>

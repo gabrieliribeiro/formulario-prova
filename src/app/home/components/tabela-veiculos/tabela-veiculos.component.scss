@@ -1,0 +1,64 @@
+.table-container{
+    margin: auto;
+    margin-top: 36px;
+    width: 740px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    background: #f6f6f6;
+    box-shadow: 7px 7px 15px 0px rgba(0, 0, 0, 0.08);
+    padding: 1em;
+    border-top: 25px;
+    margin-top: 26px;
+
+    th, td{
+        padding: 8px;
+        text-align: center;
+        border-bottom: 1px solid #ddd;
+    }
+
+    table{
+        text-align: center;
+        width: 98%;
+        margin: auto;
+        min-width: 300px;
+        margin-top: 30px;
+        font-family: "Montserrat", sans-serif;
+    }
+
+    tbody {
+        display: table-row-group;
+        vertical-align: middle;
+        border-color: inherit;
+    }
+
+    .edita{
+        background-color: #99e3f3;
+        text-align: center;
+        border: none;
+        border-radius: 2px;
+        box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.06);
+    }
+
+    .dados{
+        width: 100px;
+        height: 24px;
+    }
+
+    .exclui{
+        width: 5%;
+        background: none;
+        border: none;
+
+        .icone{
+            margin-top: 6px;
+            height: 24px;
+            width: 24px;
+        }
+    }
+
+    body.carga {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+}
